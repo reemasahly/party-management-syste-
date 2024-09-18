@@ -1,0 +1,21 @@
+USE celebrease;
+CREATE TABLE user (
+    username VARCHAR(100) PRIMARY KEY,  
+    password VARCHAR(100) NOT NULL,     
+    role VARCHAR(100) NOT NULL        
+);
+
+use celebrease;
+CREATE TABLE packages (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(100) NOT NULL,
+    description TEXT NOT NULL,
+    price DECIMAL(10, 2) NOT NULL
+);
+CREATE TABLE packages ( 
+pid INT AUTO_INCREMENT PRIMARY KEY, 
+name VARCHAR(100) NOT NULL, 
+description VARCHAR(255) NOT NULL, 
+price DECIMAL(10,2) NOT NULL, 
+image VARCHAR(255) NOT NULL 
+);
